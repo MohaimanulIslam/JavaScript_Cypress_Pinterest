@@ -1,6 +1,6 @@
 ///<reference types = "cypress" />
 
-import HomePage from '../pageObject/HomePage'
+import HomePage from '../pages/HomePage'
 
 describe('My first suite',()=>{
 
