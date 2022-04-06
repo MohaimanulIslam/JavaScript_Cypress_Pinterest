@@ -1,23 +1,24 @@
+import Login from "../utils/locators"
+
+const locator = new Login();
+
 class LoginPage{
 
-    getLocationTo(){
-        return cy.get('#search-from').type('Khulna');
-    }
 
-    clickOnCrossButton(){
-        return cy.xpath('//*[@id="__PWS_ROOT__"]/div[1]/div/div/main/div[1]/div[1]/div[2]/div[2]/button/div').click();
+    clickOnLoginButton(){
+        return cy.xpath(locator.clickLoginBtn);
     }
 
     enterUserEmail(){
-        return cy.xpath('//*[@id="email"]').type("miraz.qups@gmail.com");
+        return cy.xpath(locator.email);
     }
 
     enterUserPass(){
-        return cy.xpath('//*[@id="password"]')
+        return cy.xpath(locator.pass);
     }
 
     clickOnLogin(){
-        return cy.xpath('//*[@id="__PWS_ROOT__"]/div[1]/div/div/main/div[1]/div[2]/div[2]/div/div/div/div/div/div/div/div[4]/form/div[5]/button').click();
+        return cy.xpath(locator.clickLogin);
     }
 
 

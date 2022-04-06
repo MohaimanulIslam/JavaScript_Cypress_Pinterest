@@ -14,12 +14,12 @@ describe('My first suite',()=>{
 
     it('Pinterest Login test',function(){
 
-        const loginPage = new LoginPage;
+        const loginPage = new LoginPage();
         
-        loginPage.clickOnCrossButton();
-        loginPage.enterUserEmail();
-        loginPage.enterUserPass().type(this.data.pass)
-        loginPage.clickOnLogin();
+        loginPage.clickOnLoginButton().click();
+        loginPage.enterUserEmail().type(this.data.email);
+        loginPage.enterUserPass().type(this.data.pass);
+        loginPage.clickOnLogin().click();
 
     })
 
