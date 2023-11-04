@@ -1,6 +1,6 @@
 ///<reference types = "cypress-xpath"/>
 
-import RegistrationPage from '../pages/RegistrationPage'
+import RegistrationPage from '../pages/RegistrationPage.cy'
 
 describe('My first suite',()=>{
 

@@ -1,4 +1,4 @@
-import Login from "../utils/locators"
+import Login from "../utils/locators.cy"
 
 const locator = new Login();
 
@@ -6,7 +6,7 @@ class LoginPage{
 
 
     clickOnLoginButton(){
-        return cy.xpath(locator.clickLoginBtn);
+        return cy.get(locator.clickLoginBtn);
     }
 
     enterUserEmail(){
@@ -18,7 +18,7 @@ class LoginPage{
     }
 
     clickOnLogin(){
-        return cy.xpath(locator.clickLogin);
+        return cy.get(locator.clickLogin);
     }
 
 
